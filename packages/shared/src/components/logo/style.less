@@ -1,4 +1,5 @@
 .@{prefix}-logo {
+    position: relative;
     width: 162px;
     height: 40px;
 
@@ -8,7 +9,8 @@
         overflow: hidden;
         text-indent: -999px;
         background: url('./assets/logo-light.svg') no-repeat;
-        background-size: 100% auto;
+        background-position: center;
+        background-size: 100%;
     }
 
     &-mini {
@@ -17,22 +19,24 @@
 
         .@{prefix}-logo-inner {
             background: url('./assets/logo-light-mini.svg') no-repeat;
-            background-size: 100% auto;
+            background-position: center;
+            background-size: 100%;
         }
     }
 }
 
-// Dark theme
 [data-theme='dark'] .@{prefix}-logo {
     &-inner {
         background: url('./assets/logo-dark.svg') no-repeat;
-        background-size: 100% auto;
+        background-position: center;
+        background-size: 100%;
     }
 
     &-mini {
         .@{prefix}-logo-inner {
             background: url('./assets/logo-dark-mini.svg') no-repeat;
-            background-size: 100% auto;
+            background-position: center;
+            background-size: 100%;
         }
     }
 }
